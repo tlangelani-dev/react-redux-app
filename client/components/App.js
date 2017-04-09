@@ -1,11 +1,13 @@
 import React from 'react';
+import NavigationBar from './NavigationBar';
 
 class App extends React.Component {
     render() {
         return (
-            <section>
-                <h1>Hello from React & Redux :-)</h1>
-            </section>
+            <div className="container">
+                <NavigationBar />
+                {this.props.children}
+            </div>
         );
     }
 }
